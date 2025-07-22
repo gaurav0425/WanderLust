@@ -1,0 +1,207 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+  padding: 1rem;      
+  max-width: 1200px;  
+  margin: 0 auto; 
+}
+
+/* Navbar */
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222222 !important;
+}
+
+/* footer */
+
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.f-info {
+  text-align: center;
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: space-evenly;
+}
+
+/* Cards */
+
+/* .listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+} */
+
+.listing-card {
+  border: none !important;
+   margin: 1rem 1rem 2rem 1rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.listing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 1.5rem;
+  z-index: 10;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p {
+  font-weight: 400 !important;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+/* Card Effect  */
+
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+/* NEW Page */
+
+.add-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* Edit Page  */
+
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* Show Page */
+
+.show-img {
+  height: 30vh;
+}
+
+.btns {
+  display: flex;
+}
+
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* MAP  */
+#map {
+  height: 400px;
+  width: 100vh;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* Navbar adjustments */
+  .navbar {
+    height: 4rem;
+    padding: 0 1rem;
+  }
+
+  /* Footer stack vertically */
+  .f-info {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .f-info-links,
+  .f-info-socials,
+  .f-info-brand {
+    flex-direction: column;
+    margin: 0.5rem 0;
+  }
+
+  /* Cards responsive */
+  .card-img-top {
+    height: 200px;
+  }
+
+  .listing-card {
+    margin-bottom: 1rem;
+  }
+
+  /* Buttons stack in column */
+  .btns {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Show page image */
+  .show-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Map fix */
+  #map {
+    width: 100% !important;
+    height: 250px !important;
+  }
+}
